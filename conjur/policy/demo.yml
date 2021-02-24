@@ -1,0 +1,10 @@
+- !policy
+  id: JavaApp
+  body:
+  - !host myJavaApp
+  - !variable secretVar
+  - !permit
+    role: !host myJavaApp
+    privileges: [read, execute]
+    resource: !variable secretVar
+
