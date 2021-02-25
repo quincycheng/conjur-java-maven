@@ -1,2 +1,4 @@
 tmp/*
 .env
+conjur/tls/nginx.crt
+conjur/tls/nginx.key
