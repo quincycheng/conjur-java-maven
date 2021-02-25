@@ -13,7 +13,7 @@ keytool -importcert -noprompt  \
 /curl.sh
 
 # Start Java Console App
-java -jar /app.jar
+java --add-opens=java.base/java.net=ALL-UNNAMED \
+   --add-opens=java.base/java.lang=ALL-UNNAMED  \
+   -jar /app.jar
 
-# (optional) console for debug
-bash
