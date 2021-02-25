@@ -9,9 +9,11 @@ keytool -importcert -noprompt  \
     -storepass changeit \
     -file /etc/conjur-default.der
 
-# Test network & parameter using curl
+# (optional) Test network & parameter using curl
 /curl.sh
 
 # Start Java Console App
 java -jar /app.jar
 
+# (optional) console for debug
+bash
