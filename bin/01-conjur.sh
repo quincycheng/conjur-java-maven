@@ -3,6 +3,8 @@
 docker-compose down
 docker-compose pull
 
+mkdir -p tmp
+
 echo "Generating Data Key..."
 docker-compose run --no-deps --rm conjur data-key generate > tmp/data_key
 export CONJUR_DATA_KEY="$(< tmp/data_key)"
